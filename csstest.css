@@ -7,7 +7,7 @@ a {
   color: #fff;
 }
 .idonno {
-  position: auto
+  position: absolute;
 }
 .main-header {
   background-color: rgba(77, 65, 65, 0.501);
@@ -52,6 +52,7 @@ a {
 .main-menu>li::after {
   content: '';
   position: absolute;
+  z-index:999;
   height: 4px;
   left: 50%;
   right: 50%;
@@ -62,6 +63,7 @@ a {
 
 .main-menu li:hover {
   background-color: rgb(176, 41, 20);
+  z-index:999;
 }
 
 .main-menu>li:hover::after {
