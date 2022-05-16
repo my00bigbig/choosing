@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>哪一個比較婆</title>
+  <script type="text/javascript" defer="" async="" src="http://knuckmew.kwikphp.com/piwik/piwik.js"></script><script src="jquery-1.7.2.min.js"></script>
+  <script src="data_tc.js"></script>
+  <script src="sort_tc.js"></script>
+  <script src="effect.js"></script>
+  <script src="ui.js"></script>
+  <link rel="stylesheet" href="effect.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="typesetting.css">
+  <link rel="stylesheet" href="csstest.css">
+
+
+
+  </head>
+  <body  background="https://i.imgur.com/JtqVONN.png"style="margin: 0px;">
+  <div id="sitebody">
+  <div class="idonno"  style="background-image:url(https://i.imgur.com/0Olk08K.jpg) ;
+  width: auto;height: auto;" style="z-index: index 999;    font-size:13px;
+;">
+    <input type="checkbox" class="navbarToggle">
+	  <header class="main-header">
+	  <div class="container">
+		<h1><a href="https://my00bigbig.github.io/firstpage/">全是夢一場</a></h1>
+		<nav>
+		  <ul class="main-menu">
+			<li><h3><a href="#">關於我們</a></h3></li>
+			<li>
+			  <h3><a href="#">作品們</a></h3>
+			  <ul class="sub-menu">
+				<li><a href="https://i.imgur.com/uW3Wj8F.png">作品一</a></li>
+
+			  </ul>
+			</li>
+			<li><h3><a href="#">聯絡我們</a></h3></li>
+		  </ul>
+		</nav>
+	  </div></header>
+  </div>
+	</div>
+  <!--<body style="margin: 0px;background-color:rgb(255, 99, 71)" >-->
+
+    <!-- 
+    <div id="sidebar_left">
+      <button id="fb" onclick="location.href='https://www.facebook.com/profile.php?id=100010680966084'" style="border: 0px;"></button>
+    </div>
+    <div id="sidebar_right">
+      <a href="#virus"><img src="https://i.imgur.com/n2LjBTB.png" style="width: 300px;"></a>
+    </div> -->
+    <!--現打-->
+    
+    <div id="center" >
+      <senction id="init">    
+        <div class="init_win">
+        <fieldset>
+        <legend>
+          <label class="unchecked"><input class="group" type="checkbox" style="display: none;">我全都要<font color="red"></font></label>
+        </legend>
+      
+        <ul>
+          <li><label class="checked"><input type="checkbox" name="l" style="display: none;">還沒弄 要等等</label></li>
+          <li><label class="checked"><input type="checkbox" name="o" style="display: none;">還沒弄 要等等</label></li>
+          <li><label class="checked"><input type="checkbox" name="s" style="display: none;">還沒弄 要等等</label></li>
+          <li><label class="checked"><input type="checkbox" name="q" style="display: none;">還沒弄 要等等</label></li>
+          
+        </ul>
+        </fieldset>
+        <fieldset>
+          <legend>選項</legend>
+          <ul>
+            <li><label class="labe2">排行顯示：<br>
+              <select id="rank_num">
+                <option value="1">只顯示第一名</option>
+                <option value="4">四名內</option>
+                <option value="10" selected="selected">十名內</option>
+                <option value="20">二十名內</option>
+                <option value="50">五十名內</option>
+                <option value="100">一百名內</option>
+                <option value="999">全部</option>
+              </select>
+            </label></li>
+          </ul>
+        </fieldset>
+        <div class="clear"><button id="start_button">開始排行！</button></div>
+        </div>
+      
+      </senction>
+      
+      <section id="ui" style="display: none;">
+        <h2>請選擇比較喜歡的一方</h2>
+          <h3 class="count">Question No.<span id="count">0</span></h3>
+        <div class="zitem" id="left">
+          <div><img width="200" height="290"></div>
+          <div class="caption">
+            <h3 class="nick"></h3>
+            <p class="name"></p>
+          </div>
+        </div>
+        <div class="zitem" id="right">
+          <div><img width="200" height="290"></div>
+          <div class="caption">
+            <h3 class="nick"></h3>
+            <p class="name"></p>
+          </div>
+        </div>
+        <div class="clear"><button id="n" onclick="remove_both()">都不感興趣</button></div>
+        <!--button onclick="auto_sort()">AUTO</button-->
+      </section>
+      
+      <section id="result" style="display: none;">
+      </section>
+      
+      
+      <p id="times"></p>
+      <ul id="samp"></ul>
+      
+      <section id="reset" style="display: none;"><button id="reset_button">重置</button></section>
+      
+      <!-- Piwik -->
+      <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+        _paq.push(["setDomains", ["*.km-ul.kwikphp.com"]]);
+        _paq.push(["trackPageView"]);
+        _paq.push(["enableLinkTracking"]);
+      
+        (function() {
+          var u=(("https:" == document.location.protocol) ? "https" : "http") + "://knuckmew.kwikphp.com/piwik/";
+          _paq.push(["setTrackerUrl", u+"piwik.php"]);
+          _paq.push(["setSiteId", "2"]);
+          var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+          g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+        })();
+      </script>
+      <!-- End Piwik Code -->
+        <!--
+      <address>
+      Languages : <a href="index.htm">English</a> | <a href="ja.htm">日本語</a> | <a href="ko.htm">한국어</a> | <b>中文(繁體)</b> | <a href="th.htm">ไทย</a> <br>
+      <font color="red"><b>* 參考資料: i)<a href="http://official.unlight.jp" target="_blank">官方網站</a>內的人物相關圖與CharacrerProfile;
+      <br>ii)遊戲內的卡片、必殺技、任務地形敘述與虛擬人物零部件的説明及戰鬥台詞。</b></font>
+      <br><br>scripted by: <a href="http://totora.jpn.org/" target="_blank">nekototora</a>
+      <br>icon created by: <a href="http://www.famfamfam.com/lab/icons/silk/" target="_blank">Mark James</a>
+      <br>このスクリプトの利用・改造・転載等は自由です。
+      <br>圖像著作權: Copyright © 2010-2012 Techway Co.,Ltd. All rights reserved.
+      </address>
+       -->
+      
+        
+        </div>
+    
+        
+    </div>
+    
+    </body></html>
