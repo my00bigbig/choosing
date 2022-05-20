@@ -114,21 +114,23 @@ legend{
   font-size: small;
   
 }
-.rs_1st img{
-  width: 200px;
+.rs_1st li{
+  width: 100%;
+  font-size: xx-large;
+  
 }
 
 .rs_2nd li{
-  width: 30%;
-  font-size: small;
-}
-.rs_2nd img{
-  width: 150px;
+  width: 33.3%;
+  font-size: x-large;
 }
 
 .rs_3rd li{
-  width: 20%;
-  font-size: small;
+  width: 16.6%;
+  font-size: large;
+}
+.rs_2nd img{
+  width: 150px;
 }
 
 .rs_3rd img{
@@ -136,12 +138,12 @@ legend{
 }
 
 .rs_4th li{
-  width: 15%;
+  width: 10%;
   font-size: small;
 }
 
 .rs_4th img{
-  width: 75px;
+  width: 50px;
 }
 
 
