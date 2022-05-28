@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>哪一個比較婆</title>
+  <script type="text/javascript" defer="" async="" src="http://knuckmew.kwikphp.com/piwik/piwik.js"></script><script src="jquery-1.7.2.min.js"></script>
+  <script src="data_tc.js"></script>
+  <script src="sort_tc.js"></script>
+  <script src="effect.js"></script>
+  <script src="ui.js"></script>
+  <link rel="stylesheet" href="effect.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="typesetting.css">
+  <link rel="stylesheet" href="csstest.css">
+
+
+
+  </head>
+  <body  background="https://i.imgur.com/JtqVONN.png" style="z-index: index -100;height: 0px;" >
+    
+    
+      <div id="header"  
+      style="background-image:url(https://i.imgur.com/0Olk08K.jpg) ;
+      width: auto;height: auto;z-index: 999;">
+      
+      
+      
+        <div class="idonno" style="z-index: 999;">
+          <header class="main-header">
+          <div class="container" style="z-index: 999;">
+          <h2 id="cen"><a href="https://my00bigbig.github.io/firstpage/">全是夢一場</a></h2>
+          <nav>
+            <div id="main-menu" >
+            <ul class="main-menu"  >
+            <li><h4><a href="https://my00bigbig.github.io/aboutme/">關於我們</a></h4></li>
+            <li>
+              <h4><a href="#">作品們</a></h4>
+              <ul class="sub-menu"  >
+              <li><div style="text-align: center;"><a href="https://my00bigbig.github.io/lucky/"><font face="sans-serif" size="2">殘酷二選一</font></a></div></li>
+              <li><a href="https://my00bigbig.github.io/readmore/"><font face="sans-serif" size="2">雜誌們</font></a></li>
+
+              </ul>
+            </li>
+            <li>
+              <h4><a href="#">聯絡我們</a></h4>
+              <ul class="sub-menu" >
+                <li><a href="https://www.facebook.com/profile.php?id=100014031043643"><font face="sans-serif" size="2">FB</font></a></li>
+                <li><a href="https://www.instagram.com/linda_x04a/"><font face="sans-serif" size="2">IG</font></a></li>
+                
+                </ul>
+            </li>            </ul>
+          </div>
+          </nav>
+          </div>
+          </header>
+        </div>
+      </div>
+      
+        <div id="sidebar_left" style="height: 100%" style="z-index: index -111;">
+
+        </div>
+        <div id="sidebar_right" style="height: 100%" style="z-index: index -111;">
+          
+          
+        </div>
+
+        <div id="content" style="z-index: -100;">
+          <div>
+            <section id="blank3"> </section>
+            <hr class="style-one" />
+            <section id="blank3"> </section>
+            <div id="media"><font face="sans-serif" size="5"><strong>排序介紹和使用</strong></font></div>
+            <section id="blank3"> </section>
+          <div id="naiwei" style="margin-left: 100px;color: #44566D;">
+          <p     align = "left">
+            利用此排序來建立排名表。<br/>
+            記得要勾選<br/>
+            <img src="https://i.imgur.com/SHCXCu3.png"><br/>
+            如果兩者都不喜歡，請選擇"都不感興趣"。<br/>
+
+            *照片好難找<br/>
+            選擇完成後將顯示排名<br/>
+            
+          </p>
+          </div>
+          </div>
+          <div class="title-line-two"></div>      
+
+          <senction id="init">    
+            <div class="init_win">
+            <fieldset style="padding: 5 12 10 12;">
+            <legend>
+              <label class="unchecked"><input class="group" type="checkbox" style="display: none;">全部(14)<font color="red"></font></label>
+            </legend>
+          
+            <ul>
+              <li><label class="checked"><input type="checkbox" name="l" style="display: none;">映像研雙人組(2)</label></li>
+              <li><label class="checked"><input type="checkbox" name="o" style="display: none;">九八九九女優(3)</label></li>
+              <li><label class="checked"><input type="checkbox" name="s" style="display: none;">大勢偶像選擇(5)</label></li>
+              <li><label class="checked"><input type="checkbox" name="q" style="display: none;">九七零零女優(4)</label></li>
+              
+            </ul>
+            </fieldset>
+            <fieldset>
+              <legend>選項</legend>
+              <ul>
+                <li><label class="labe2">排行顯示：<br>
+                  <select id="rank_num">
+                    <option value="1">只顯示第一名</option>
+                    <option value="4">四名內</option>
+                    <option value="10" selected="selected">十名內</option>
+                    <option value="20">二十名內</option>
+                    <option value="50">五十名內</option>
+                    <option value="100">一百名內</option>
+                    <option value="999">全部</option>
+                  </select>
+                </label></li>
+              </ul>
+            </fieldset>
+            <div class="clear"><button id="start_button">開始排行！</button></div>
+            </div>
+          
+          </senction>
+          
+          <section id="ui" style="display: none;">
+            <h2>請選擇比較喜歡的一方</h2>
+              <h3 class="count">Question No.<span id="count">0</span></h3>
+            <div class="zitem" id="left">
+              <div><img width="200" height="290"></div>
+              <div class="caption">
+                <h3 class="nick"></h3>
+                <p class="name"></p>
+              </div>
+            </div>
+            <div class="zitem" id="right">
+              <div><img width="200" height="290"></div>
+              <div class="caption">
+                <h3 class="nick"></h3>
+                <p class="name"></p>
+              </div>
+            </div>
+            <div class="clear"><button id="n" onclick="remove_both()">都不感興趣</button></div>
+            <!--button onclick="auto_sort()">AUTO</button-->
+          </section>
+          
+          <section id="result" style="display: none;">
+          </section>
+          
+          
+          <p id="times"></p>
+          <ul id="samp"></ul>
+          
+          <section id="reset" style="display: none;"><button id="reset_button">重置</button></section>
+          
+          <!-- Piwik -->
+          <script type="text/javascript">
+            var _paq = _paq || [];
+            _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+            _paq.push(["setDomains", ["*.km-ul.kwikphp.com"]]);
+            _paq.push(["trackPageView"]);
+            _paq.push(["enableLinkTracking"]);
+          
+            (function() {
+              var u=(("https:" == document.location.protocol) ? "https" : "http") + "://knuckmew.kwikphp.com/piwik/";
+              _paq.push(["setTrackerUrl", u+"piwik.php"]);
+              _paq.push(["setSiteId", "2"]);
+              var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+              g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+            })();
+          </script>
+          
+          
+            
+            </div>
+        
+            
+        </div>
+        
+        </body></html>
+    
